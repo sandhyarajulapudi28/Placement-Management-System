@@ -2,54 +2,7 @@
 
 ## Project Overview
 
-This project automates a Placement Management System using Salesforce Flow Builder and Validation Rules.
-
----
-
-## Requirements Solved Using Flow
-
-1. Automatically populated Application Date.
-2. Sent email notification to the Placement Officer.
-3. Automatically created an Offer Letter when Status changed to Selected.
-
----
-
-## Requirements Solved Using Validation Rules
-
-1. Prevented students with CGPA below the required minimum.
-2. Prevented Application Date from being after the Job Closing Date.
-3. Made Student and Job mandatory.
-
----
-
-## Requirements That Needed Apex
-
-None.
-
-All project requirements were completed using Salesforce Flow and Validation Rules.
-
-Apex would only be required for:
-- External REST API integrations
-- Complex calculations
-- Bulk data processing
-
----
-
-## Why These Solutions Were Chosen
-
-### Flow
-
-Used because it is declarative, easy to maintain, and requires no code.
-
-### Validation Rules
-
-Used to maintain data quality and prevent invalid records.
-
-### Apex
-
-Not used because Flow was sufficient for the project.
-
----
+This project automates the Placement Management System using Salesforce Flow Builder and Validation Rules.
 
 ## Features
 
@@ -60,3 +13,43 @@ Not used because Flow was sufficient for the project.
 - Automatic Application Date
 - Email Notification
 - Offer Letter Creation
+- Validation Rules
+
+## Requirements Solved Using Flow
+
+1. Automatically populated the Application Date when a new Application was created.
+2. Sent an email notification to the Placement Officer when a new Application was submitted.
+3. Automatically created an Offer Letter record when the Application Status changed to **Selected**.
+
+## Requirements Solved Using Validation Rules
+
+1. Prevented students with CGPA below the required minimum from applying.
+2. Prevented the Application Date from being later than the Job Closing Date.
+3. Ensured mandatory fields (Student and Job) were not left blank.
+
+## Requirements That Needed Apex
+
+None for this project.
+
+All the required functionality was successfully implemented using Salesforce Flow and Validation Rules.
+
+Apex would be useful for:
+- Calling external REST APIs
+- Complex business logic
+- Large-scale data processing
+- Advanced calculations across multiple objects
+
+## Why These Solutions Were Chosen
+
+### Flow
+Flow was used because it is a declarative (no-code) automation tool. It is easy to build, maintain, and supports field updates, email notifications, and record creation.
+
+### Validation Rules
+Validation Rules were used to ensure data quality and prevent invalid records from being saved.
+
+### Apex
+Apex was not required because all project requirements were achieved using declarative Salesforce features.
+
+## Screenshots
+
+All screenshots are available in the **Screenshots** folder of this repository.
