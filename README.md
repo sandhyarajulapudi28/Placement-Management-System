@@ -1,97 +1,58 @@
-
 # Placement Management System
 
 ## Project Overview
 
-This project automates the Placement Management System using Salesforce Flows, Validation Rules, and Apex Trigger.
+This project is being developed as part of the Salesforce Developer Bootcamp. It demonstrates the development of a Placement Management System using Salesforce declarative tools, Apex, and Lightning Web Components.
 
-## Features
+---
+
+# Day 3 – Salesforce Automation
+
+## Features Implemented
 
 - Student Management
 - Job Management
 - Application Management
 - Offer Letter Management
-- Automatic Application Date
+
+### Flow Automation
+
+- Auto-populated Application Date
 - Email Notification
-- Validation Rules
-- Apex Trigger for Duplicate Application Prevention
-
----
-
-## Requirements Solved Using Flow
-
-1. Automatically populated the Application Date when a new Application was created.
-2. Sent an email notification to the Placement Officer when a new Application was submitted.
-3. Automatically created an Offer Letter record when the Application Status changed to **Selected**.
-
----
-
-## Requirements Solved Using Validation Rules
-
-1. Prevented students with CGPA below the required minimum from applying.
-2. Prevented the Application Date from being later than the Job Closing Date.
-3. Ensured mandatory fields (Student and Job) were not left blank.
-
----
-
-## Requirements Solved Using Apex
-
-1. Prevented duplicate applications by checking whether the same student had already applied for the same job.
-2. Displayed an error message if a duplicate application was detected.
-
----
-
-## Why These Solutions Were Chosen
-
-### Flow
-Flow was used because it is a declarative (no-code) automation tool that is easy to maintain. It was used for:
-- Auto-filling the Application Date
-- Sending Email Notifications
-- Creating Offer Letter records
+- Offer Letter Creation
 
 ### Validation Rules
-Validation Rules were used to maintain data quality by preventing invalid records from being saved.
+
+- CGPA Validation
+- Closing Date Validation
+- Mandatory Field Validation
 
 ### Apex Trigger
-Apex Trigger was used to implement duplicate application checking because it can query existing records and apply custom business logic before saving.
+
+- Prevented Duplicate Applications
 
 ---
 
-## Technologies Used
+# Day 4 – Lightning Web Components (LWC)
 
-- Salesforce Developer Org
-- Flow Builder
-- Validation Rules
-- Apex Trigger
-- Custom Objects
-- Lookup Relationships
+## What is LWC?
 
----
+Lightning Web Components (LWC) is Salesforce's modern UI framework built using HTML, JavaScript, and CSS.
 
-## Project Outcome
+## Component Developed
 
-The Placement Management System successfully automates:
+**Component Name:** `placementHome`
 
-- Application Date population
-- Email notifications
-- Duplicate application prevention
-- Offer Letter creation
-- Data validation
+### Features
 
-using Salesforce declarative tools and Apex.
+- Welcome Banner
+- Student Profile Card
+- Dynamic Today's Date
+- Dashboard Cards
+- Welcome Message Button
+- Apply Now Button
+- Status Change (Not Applied → Applied)
 
 ---
 
-## Screenshots
-
-The **Screenshots** folder contains:
-
-- Flow 1 – Application Date
-- Flow 2 – Email Notification
-- Flow 3 – Offer Letter Creation
-- Apex Trigger
-- Validation Rules
-- Successful Application Record
-- Email Notification
-- Offer Letter Record
-
+## LWC Project Structure
