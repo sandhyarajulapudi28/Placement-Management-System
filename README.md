@@ -56,3 +56,29 @@ Lightning Web Components (LWC) is Salesforce's modern UI framework built using H
 ---
 
 ## LWC Project Structure
+
+
+
+
+
+
+# Day 5 – Building Business Logic with Apex
+
+## Objective
+Implemented business logic for the Placement Management System using Apex.
+
+## Features Implemented
+- Created `ApplicationService` Apex class.
+- Added `submitApplication()` method.
+- Prevented duplicate applications.
+- Validated student CGPA.
+- Saved application records using DML.
+- Tested using Execute Anonymous.
+
+## Key Concepts Learned
+- Business Logic
+- Apex Classes
+- Apex Methods
+- SOQL Queries
+- DML Operations
+- Decision Making in Apex
